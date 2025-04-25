@@ -4,8 +4,16 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+  />
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css">
   <title>Frontend Mentor | Fylo landing page with two column layout</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
@@ -17,7 +25,9 @@
 <body>
 
   <header class="header">
-    <img class="logo" src="./images/logo.svg" alt="fylo-logo">
+    <div>
+      <img class="logo" src="./images/logo.svg" alt="fylo-logo">
+    </div>
     <nav class="nav">
       <a href="#">Features</a>
       <a href="#">Team</a>
@@ -32,13 +42,13 @@
       </h1>
       <p>
         Fylo stores your most important files in one secure location. 
-    Access them wherever you need, share and collaborate with       friends, 
+        Access them wherever you need, share and collaborate with       friends, 
         family, and co-workers.
       </p>
-      <div class="email-input">
+      <form class="email-input">
         <input type="email" placeholder="Enter your email...">
-        <button class="email-btn">Get Started</button>
-      </div>
+        <button type="submit" class="email-btn">Get Started</button>
+      </form>
     </div>
     <div class="hero-image">
       <img src="./images/illustration-1.svg" alt="illustration-1">
@@ -58,15 +68,15 @@
         Securely share files and folders with friends, family and colleagues for 
         live collaboration. No email attachments required!
       </p>
-      <div class="redirect-link">
-        <a href="#">See how Fylo works</a>
-      </div>
+    
+      <a href="#">See how Fylo works <img src="./images/icon-arrow.svg" alt="GitHub" width="24" height="24" /></a>
       <div class="testimonial">
+        <img src="./images/icon-quotes.svg" alt="GitHub" width="24" height="24" />
         <p>
           Fylo has improved our team productivity by an order of magnitude. Since 
           making the switch our team has become a well-oiled collaboration machine.
         </p>
-        <div>
+        <div class="author">
           <img src="./images/avatar-testimonial.jpg" alt="profile-pic">
           <div class="name">
             <p class="name-text">
@@ -97,17 +107,17 @@
       </p>
     </div>
 
-    <div class="email-input">
+    <form class="cta-email-input">
       <input type="email" placeholder="example@email.com">
-      <button>Get Started For Free</button>
-    </div>
+      <button type="submit" class="cta-btn">Get Started For Free</button>
+    </form>
   </section>
 
   <footer>
+      <img src="./images/logo.svg" alt="Fylo Logo" class="footer-logo">
     <div class="footer-container">
-
+      
       <div class="footer-brand">
-        <img src="./images/logo.svg" alt="Fylo Logo" class="footer-logo">
         <div class="contact-info">
           <p>
             <i class="fas fa-phone-alt"></i>
@@ -152,13 +162,5 @@
     </div>
   </footer>
 
-
-
-  <footer>
-    <p class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Mamun Miah</a>.
-    </p>
-  </footer>
 </body>
 </html>

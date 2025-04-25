@@ -1,0 +1,291 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    color: hsl(243, 87%, 12%);
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    padding: 3% 2% 10px 50px;
+    justify-content: space-between;
+}
+.logo {
+    width: 100px;
+    height: auto;
+}
+
+.nav {
+    min-width: 300px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.hero {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px 5%;
+    align-items: center;
+}
+
+
+.hero-info {
+    flex: 1;
+    min-width: 300px;
+}
+
+.hero-info h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.hero-info p {
+    margin-bottom: 20px;
+}
+.email-input {
+    display: flex;
+    flex-wrap: wrap;
+    gap:10px;
+}
+.email-input input {
+    padding : 10px 100px 10px 40px;
+    font-size: 15px;
+}
+
+.email-input button {
+    padding : 10px 50px 10px 50px;
+    color: white;
+    border: none;
+    background-color: hsl(224, 93%, 58%);
+    cursor: pointer;
+    border-radius: 2px;
+    font-size: 16px;
+} 
+
+.hero-image img{
+    width: 100%;
+    max-width: 500px;
+}
+
+.features {
+    margin-top: 70px;
+    padding: 70px 5%;
+
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    
+    background-image: url('./images/bg-curve-desktop.svg'); 
+    background-size: cover;       
+    background-position: center;   
+    background-repeat: no-repeat;
+}
+
+.features-info {
+    flex: 1;
+    min-width: 300px;
+}
+
+.features-info h2 {
+    margin-bottom: 20px;
+}
+.features-info p {
+    margin-bottom: 10px;
+}
+
+.features-info a {
+    color: hsl(170, 45%, 43%);
+    text-decoration: none;
+    border-bottom: 2px solid hsl(170, 45%, 43%);
+    padding-bottom: 7px;
+    
+    
+}
+
+.features-info a img {
+    margin-bottom: -7px;
+   
+}
+
+.testimonial {
+    width: 400px;
+    background: white;
+    padding: 25px;
+    margin-top: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.10);
+    display: flex;
+    flex-direction: column;
+    font-weight: 400;
+
+}
+.author {
+    display: flex;
+    flex-direction: left;
+    gap:20px;
+    height: 50px;
+    margin-top: 10px;
+}
+.author img {
+    width: 50px;
+    height: auto;
+    border-radius: 50%;
+}
+.author .name-text {
+    font-weight: bold;
+}
+
+.feature-image img{
+    width: 100%;
+    max-width: 400px;
+}
+
+.cta {
+    background: hsl(238, 22%, 44%);
+    color: white;
+    padding: 70px 5%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.cta-text {
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.cta-text p {
+    opacity: 0.7;
+}
+
+.cta-email-input {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-right: 100px;
+}
+
+.cta-email-input input {
+    padding : 10px 100px 10px 70px;
+    font-size: 15px;
+    border-radius: 2px;
+    border: none;
+}
+
+.cta-btn {
+    width: 200px;
+    padding:10px;
+    color: white;
+    border: none;
+    background-color: hsl(224, 93%, 58%);
+    cursor: pointer;
+    border-radius: 3px;
+    font-size: 16px;
+}
+
+
+footer {
+    background-color: #1b2a41;
+    color: white;
+    padding-top: 50px;
+    padding-left: 40px;
+    padding-right: 30px;
+    padding-bottom: 40px;
+    
+}
+.footer-container {
+    max-width: 1800px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    
+}
+
+.footer-links ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-links ul li {
+    margin-bottom: 15px;
+}
+
+.social {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 30px;
+    margin-right: 40px;
+
+}
+
+.contact-info p i {
+    margin-right: 5px;
+}
+
+@media(max-width:768px) {
+    .hero, .features {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+    .features-info{
+        flex-direction: colum;
+        justify-content: center;
+        align-items: center;
+    }
+    .features{
+        background-image: url('./images/bg-curve-mobile.svg'); 
+    }
+
+    .email-input {
+        flex-direction: column;
+        
+    }
+
+    .cta {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+    .cta-text {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .cta-email-input {
+        flex-direction: column;
+        margin: 0;
+        align-items: center; 
+    }
+    .cta-btn {
+        min-width: 350px;
+        padding : 10px 100px 10px 100px;
+    }
+    .footer-container{
+        flex-direction: column;
+        gap: 30px;
+    }
+    .social {
+        display: flex;
+        justify-content: center;
+        margin-right: 0px;
+    
+    }
+}
